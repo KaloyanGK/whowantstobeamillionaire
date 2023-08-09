@@ -1,0 +1,69 @@
+.result-page-wrapper {
+  width: 100%;
+  background-image: url("../images/result-background.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+.result-page-container {
+  margin: 0 auto;
+}
+.result-page-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.result-page-content h2 {
+  padding-top: 20px;
+  color: white;
+}
+.prices {
+  border: 1px solid white;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+.price {
+  padding: 3px 0;
+  color: #c99908;
+  font-size: 18px;
+}
+.white {
+  color: white;
+}
+.play-again-btn {
+  background-color: #212529;
+  color: white;
+  border-radius: 10px;
+  min-width: 300px;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 5px 0;
+  font-size: 18px;
+}
+.active {
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+}
+
+@media (max-width: 900px) {
+  .result-page-content {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 460px) {
+  .result-page-wrapper {
+    position: relative;
+  }
+  .result-page-content h2 {
+    max-width: 400px;
+    text-align: center;
+  }
+  .play-again-btn {
+    position: absolute;
+    bottom: 5px;
+  }
+}
